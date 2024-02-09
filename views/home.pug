@@ -1,0 +1,48 @@
+extends layout.pug
+
+block scripts
+    script(src='../static/index.js')
+
+block style
+    style
+        include ../static/style.css
+
+block content
+    nav#navbar
+        ul
+            li
+                div#logo
+                    img(src="/static/logo2.png")
+                    | DD
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+    section#introSection
+        div Welcome To Dazzle Dance
+        div.small Eat Sleep Dance Repeat
+    section#missionSection
+        h2 Our Mission
+        div.cardBox
+            div.card
+                div.card-box
+                    div.card-img
+                        img(src="/static/c3.png")
+                    h3 Celebrating Diversity Through Dance
+                    div.card-content
+                        p At Dazzle Dance, we champion a global tapestry of dance styles and cultures. Our vibrant platform fosters unity, inviting individuals from all backgrounds to share their unique stories through the universal language of dance.
+            div.card
+                div.card-box
+                    div.card-img
+                        img(src="/static/c1.png")
+                    h3 Empowering Artists, Inspiring Movements
+                    div.card-content
+                        p Dedicated to empowering dancers and choreographers, Dazzle Dance serves as a dynamic stage for talent and creativity. We inspire movements, both on and off the dance floor, fostering positive change through collaboration, education, and support.
+            div.card
+                div.card-box
+                    div.card-img
+                        img(src="/static/c2.png")
+                    h3 Connecting Passionate Souls Through Dance
+                    div.card-content
+                        p At Dazzle Dance, we're a hub for dance enthusiasts worldwide. Our mission is to connect passionate souls, transcending borders and bringing individuals together through the joy of rhythm and self-expression. Explore, connect, and grow with us.
