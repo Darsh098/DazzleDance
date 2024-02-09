@@ -19,6 +19,11 @@ app.get('/',(req,res)=>{
     res.status(200).render('home.pug',params);
 });
 
+app.get('/contact',(req,res)=>{
+    const params = {};
+    res.status(200).render('contact.pug',params);
+});
+
 //Start The Server
 app.listen(port,()=>{
     console.log("App Running On Port: "+port);

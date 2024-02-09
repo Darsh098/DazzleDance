@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&family=ZCOOL+QingKe+HuangYou&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#contactSection {
+    margin: 3px 0;
+    background-color: #f9d8ad;
+    min-height: 74vh;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'ZCOOL QingKe HuangYou', sans-serif;
+    padding-top: 12px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f9d8ad; */
+    padding: 12px 0;
+}
+
+.myInput {
+    /* display: block; */
+    width: 35%;
+    background-color: black;
+    color: #f9d8ad;
+    margin: 8px;
+    padding: 9px;
+    outline: none;
+    border-radius: 12px;
+    border: 2px solid #826949;
+    font-size: 12px;
+}
+
+/* CSS */
+.btn {
+    appearance: none;
+    background-color: black;
+    border: 2px solid #826949;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #f9d8ad;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Lacquer', system-ui;
+    font-size: 20px;
+    line-height: normal;
+    margin: 0;
+    outline: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    width: 10%;
+}
+
+.btn:disabled {
+    pointer-events: none;
+}
+
+.btn:hover {
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px; */
+    box-shadow: #826949 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
