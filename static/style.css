@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&family=ZCOOL+QingKe+HuangYou&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    margin: 0px 14px;
+    color:  #f9d8ad;
+    font-size: 20px;
+}
+
+#logo img{
+    height: 50px;
+    /* filter: invert(1); */
+}
+
+#navbar{
+    border: 1px solid #f9d8ad;
+    border-radius: 12px;
+    background-color: black;
+    padding: 18px 14px;
+    margin: 2px;
+    font-family: 'Lacquer', system-ui;
+    /* font-family: 'Yeon Sung', system-ui; */
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#navbar li{
+    list-style: none;
+}
+
+#navbar li a{
+    text-align: center;
+    text-decoration: none;
+    color: #f9d8ad;
+    font-size: 20px;
+    padding: 13px 30px;
+}
+
+#navbar li a:hover{
+    color: black;
+    border-radius: 8px;
+    padding: 3px 15px;
+    background-color: #f9d8ad;
+    font-size: 25px;
+}
+
+#introSection{
+    height: 350px;
+    background:center/cover no-repeat url("/static/bg.jpg");
+    color: #f9d8ad;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    font-family: 'ZCOOL QingKe HuangYou', sans-serif;
+    padding-bottom: 80px;
+}
+
+#introSection div.small{
+    font-size: 33px;
+    padding: 5px;
+}
+
+#missionSection{
+    /* height: 300px; */
+    height: 400px;
+    background-color: #f9d8ad;
+}
+
+#missionSection h2{
+    padding-top: 12px;
+    font-family: 'ZCOOL QingKe HuangYou', sans-serif;
+    text-align: center;
+}
+
+.cardBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card{
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 30%;
+    margin: 23px 22px;
+    /* height: 210px; */
+    padding: 0px 10px;
+}
+
+.card h3{
+    text-align: center;
+    font-family: 'ZCOOL QingKe HuangYou', sans-serif;
+    margin: 12px;
+}
+
+.card-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.card-img{
+    height: 160px;
+    padding: 0px 14px;
+}
+
+.card-img img{
+    height: inherit;
+    /* padding: 0px 14px; */
+}
+.card-content{
+    display: none;
+}
+.card:hover
+{
+    /* .card-box{
+        align-items: center;
+    } */
+    .card-content{
+        display: block;
+    }
+    .card-img{
+        display: none;
+    }
+}
+
+#footer{
+    height: 100px;
+    background-color: black;
+}
