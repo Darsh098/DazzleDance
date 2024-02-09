@@ -160,6 +160,11 @@ body {
 }
 
 #footer {
-    height: 100px;
+    height: 60px;
+    color: #f9d8ad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
     background-color: black;
 }
