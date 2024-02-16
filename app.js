@@ -1,8 +1,6 @@
 const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
-const bodyparser = require('body-parser');
-// const fs = require('fs');
 const app = express();
 const port = 80;
 mongoose.connect('mongodb://127.0.0.1:27017/DazzleDance');
